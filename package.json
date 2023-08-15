@@ -1,0 +1,20 @@
+{
+  "name": "ja-issues-cache",
+  "version": "1.0.0",
+  "description": "This repository contains the cached issues from Jira Assistant repository. This is used to provide search capability from within www.jiraassistant.com website",
+  "dependencies": {
+    "github-2-markdown": "github:shridhar-tl/github-2-markdown"
+  },
+  "scripts": {
+    "start": "gh2md --config gh2md.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shridhar-tl/ja-issues-cache.git"
+  },
+  "author": "Shridhar TL",
+  "bugs": {
+    "url": "https://github.com/shridhar-tl/ja-issues-cache/issues"
+  },
+  "homepage": "https://www.jiraassistant.com/"
+}

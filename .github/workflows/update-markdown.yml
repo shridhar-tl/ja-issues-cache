@@ -1,0 +1,31 @@
+# This workflow runs github-2-markdown tool for updating cache and pushes back the markdown file to repository
+
+name: Update Markdown Cache
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      CI: ""
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+      
+    - run: echo Installing dependencies
+    - run: npm install
+    - run: git config --global user.email "shridhar.tl@gmail.com"
+    - run: git config --global user.name "Git Action Script"
+    - run: echo Running github-2-markdown tool for updating cache
+    - run: npm start

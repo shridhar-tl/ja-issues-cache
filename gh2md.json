@@ -2,7 +2,7 @@
     "lastTimeStamp": "",
     "file_name_template": "{number}.md",
     "output_path": "issues",
-    "max_issues_per_run": 50,
+    "max_issues_per_run": 55,
     "source_repository": "https://github.com/shridhar-tl/jira-assistant",
     "autoCommit": true,
     "md_config": {
@@ -11,8 +11,9 @@
         "comment_title_format": null,
         "dateFormat": "MMM dd, yyyy",
         "header": {
-            "slug": "{number}/{title|cut:50}",
-            "date": "{updated_at??created_at}",
+            "id": "{number}",
+            "slug": "{title|cut:50}",
+            "date": "{updated_at|yyyy-MM-dd??created_at|yyyy-MM-dd}",
             "title": "{title}"
         }
     }

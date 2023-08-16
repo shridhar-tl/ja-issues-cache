@@ -1,5 +1,5 @@
 {
-    "lastTimeStamp": "",
+    "lastTimeStamp": "2019-10-05T11:50:30.000Z",
     "file_name_template": "{number}.md",
     "output_path": "issues",
     "max_issues_per_run": 55,

@@ -2,7 +2,7 @@
   "name": "ja-issues-cache",
   "version": "1.0.0",
   "description": "This repository contains the cached issues from Jira Assistant repository. This is used to provide search capability from within www.jiraassistant.com website",
-  "dependencies": {
+  "devDependencies": {
     "github-2-markdown": "github:shridhar-tl/github-2-markdown"
   },
   "scripts": {
